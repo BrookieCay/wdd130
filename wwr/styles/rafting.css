@@ -1,9 +1,9 @@
 :root {
-    --vivid-sky-blue: #48CAE4;
-    --desert-sand: #DAB49D;
-    --blue-green: #0096C7;
-    --vanilla: #FCEFB4;
-    --light-cyan: #CAF0F8;
+    --vivid-sky-blue: 72, 202, 228;
+    --desert-sand: 218, 180, 157;
+    --blue-green: 0, 150, 199;
+    --vanilla: 252, 239, 180;
+    --light-cyan: 202, 240, 248;
 }
 
 body {
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--blue-green);
+    color: rgb(var(--blue-green));
     font-family: "Asul", serif;
     font-weight: 700;
     font-style: normal;
@@ -31,7 +31,7 @@ footer {
 }
 
 header a {
-    color: var(--blue-green);
+    color: rgb(var(--blue-green));
 }
 
 .socialMediaLink {
@@ -54,7 +54,7 @@ header a {
     right: 5%;
     left: 5%;
     clear: both;
-    background-color: color-mix(in srgb, var(--blue-green), transparent);
+    background-color: rgba(var(--blue-green), .5);
     padding: 12px;
 }
 
@@ -67,7 +67,7 @@ header a {
 
 .hero article p {
     width: 800px;
-    color: var(--vanilla);
+    color: rgb(var(--vanilla));
 }
 
 .hero h1 {
@@ -76,7 +76,7 @@ header a {
     left: 0;
     right: 0;
     padding: 12px 0;
-    color: var(--vanilla);
+    color: rgb(var(--vanilla));
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
 }
