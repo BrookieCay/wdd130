@@ -1,7 +1,7 @@
 :root {
     --vivid-sky-blue: 72, 202, 228;
     --desert-sand: 218, 180, 157;
-    --blue-green: 0, 150, 199;
+    --blue-green: 0, 60, 199;
     --vanilla: 252, 239, 180;
     --light-cyan: 202, 240, 248;
 }
@@ -30,8 +30,31 @@ footer {
     margin-right: auto;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
 header a {
     color: rgb(var(--blue-green));
+    background-color: rgb(var(--vanilla));
+    text-decoration: none;
+    min-width: 120px;
+    text-align: center;
+    padding: 6px;
 }
 
 .socialMediaLink {
@@ -81,11 +104,72 @@ header a {
     background: rgba(0, 0, 0, 0.3);
 }
 
+
+section.history {
+    text-align: center;
+    background-color: rgb(var(--vanilla));
+    padding: 12px 24px 24px 24px;
+}
+
+.history h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.history-content {
+    display: flex;
+    text-align: initial;
+    gap: 18px;
+}
+
+section img {
+    max-width: 300px;
+}
+
+.adventure {
+    background-color: rgb(var(--blue-green));
+}
+
+figure {
+    margin: 0
+}
+
+figure figcaption {
+    text-align: center;
+    color: rgb(var(--vanilla));
+}
+
+.adventure h2 {
+    color: rgb(var(--vanilla));
+    text-align: center;
+}
+
+.adventure-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 12px 18px 12px;
+}
+
+.adventure-content img {
+    max-width: 190px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
 footer a {
     text-decoration: none;
 }
 
 footer img {
-    width: 50px;
+    width: 32px;
     height: auto;
 }
