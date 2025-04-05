@@ -14,7 +14,6 @@
         href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
-
 </head>
 
 <body>
@@ -44,10 +43,10 @@
         <div class="contact-info flex">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19051.677895584355!2d-116.12359070027182!3d44.08224443938635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54af15a9735beec7%3A0x1343ba73daadddf7!2sBear%20Valley%20River%20Co!5e0!3m2!1sen!2sus!4v1743806534316!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                width="600" height="450" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div>
-                <h2>Company Information</h4>
+                <h2>Company Information</h2>
                 <p>Exciting Expeditions<br>
                     7860 ID-55<br> Banks, Idaho 83602
                 </p>
@@ -67,13 +66,13 @@
                         <label for="useremail">Email:</label>
                         <input type="email" id="useremail" name="useremail">
                     </div>
-                    <div class="form-item column2">
-                        <label for="reason">Reason</label>
-                        <select id="reason" name="reason">
-                            <option value="inquiry">General Inquiry</option>
-                            <option value="Reservation">Reservation Question</option>
-                            <option value="Suggestion">Website Suggestion</option>
-                        </select>
+                    <div>
+                        <input type="radio" id="inquiry" name="reason" value="inquiry" />
+                        <label for="inquiry">General Inquiry</label>
+                        <input type="radio" id="Reservation" name="reason" value="Reservation" />
+                        <label for="Reservation">Reservation Question</label>
+                        <input type="radio" id="Suggestion" name="reason" value="Suggestion" />
+                        <label for="Suggestion">Website Suggestion</label>
                     </div>
                     <div class="form-item">
                         <label class="text-left" for="message">Message:</label>
