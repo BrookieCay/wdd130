@@ -93,6 +93,40 @@ header a {
     color: rgb(var(--vanilla));
 }
 
+.call-to-action {
+    transition: background-color 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: #003cc7;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.call-to-action:hover {
+    background-color: #3048b5;
+}
+
+.call-to-action h2 {
+    color: #fff;
+}
+
+.home .grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    gap: 12px;
+}
+
+.home .grid-content .flex {
+    flex-direction: column;
+
+}
+
+
+
 .hero h1 {
     position: absolute;
     top: 20%;
@@ -107,6 +141,7 @@ header a {
 section.history {
     text-align: center;
 }
+
 section.history,
 .contact-info div {
     background-color: rgb(var(--vanilla));
@@ -114,8 +149,9 @@ section.history,
 }
 
 .contact-info {
-  border: 1px solid rgb(242, 215, 96);
+    border: 1px solid rgb(242, 215, 96);
 }
+
 .contact-info div {
     flex-grow: 1;
 }
@@ -175,8 +211,52 @@ figure figcaption {
     max-width: 190px;
 }
 
+.trips table {
+    width: 100%;
+    border: solid 2px grey;
+    border-collapse: collapse;
+}
+
+.trips table th,
+.trips table td {
+    border: solid 1px grey;
+    padding: 2px 4px;
+}
+
+.trips table thead {
+    background-color: rgb(var(--vanilla));
+}
+
+.trips>div:not(.head) {
+    flex-direction: column;
+}
+
+.trips .head {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trips .head .call-to-action {
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    padding: 12px 8px;
+}
+
+
+.trips>div>div {
+    justify-content: space-between;
+}
+
+.trips img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
 footer div {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 12px;
 }
@@ -211,6 +291,12 @@ form {
     background-color: rgb(var(--vanilla));
     display: grid;
 }
+
+.home form {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 fieldset {
     display: grid;
     grid-gap: .5rem;
@@ -218,27 +304,39 @@ fieldset {
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
 }
+
 legend {
     padding: 0.5rem;
     color: rgb(var(--blue-green));
     font-size: 1.3em;
 }
-label, input, button, select, textarea {
+
+label,
+input,
+button,
+select,
+textarea {
     font-family: Roboto, Arial, sans-serif;
 }
+
 label {
     text-align: right;
     padding-right: 1rem;
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
 }
+
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
     vertical-align: bottom;
 }
+
 button {
     margin: 1rem;
     background-color: rgb(var(--blue-green));
@@ -248,6 +346,7 @@ button {
     padding: .75rem;
     font-size: 1.2rem;
 }
+
 button:hover {
     background-color: rgb(var(--vivid-sky-blue));
 }
@@ -256,13 +355,16 @@ button:hover {
     display: grid;
     align-items: center;
 }
+
 .column1 {
     grid-template-columns: 3fr 1fr;
     margin: 0.5rem 0;
 }
+
 .column2 {
     grid-template-columns: 1fr 2fr;
 }
+
 .text-left {
     text-align: left;
 }
